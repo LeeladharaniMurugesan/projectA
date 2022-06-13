@@ -1,0 +1,11 @@
+Notes: 
+The Spring framework enables automatic dependency injection. 
+In other words, by declaring all the bean dependencies in a Spring configuration file, Spring container can autowire relationships between collaborating beans. 
+This is called Spring bean auto wiring.
+
+Auto wiring has the following advantages:
+• Auto wiring can significantly reduce the need to specify properties or constructor arguments. (Other mechanisms such as a bean template discussed elsewhere in this chapter are also valuable in this regard.)
+• Auto wiring can update a configuration as your objects evolve. For example, if you need to add a dependency to a class, that dependency can be satisfied automatically without you needing to modify the configuration.
+
+Thus auto wiring can be especially useful during development, without negating the option of switching to explicit wiring when the code base becomes more stable
+You can combine auto wire behavior with dependency checking, which is performed after autowiring completes.
